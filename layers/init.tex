@@ -3,8 +3,15 @@
 \usetikzlibrary{positioning}
 
 \def\edgecolor{rgb:blue,4;red,1;green,4;black,3}
+\def\ConnColorA{rgb:red,4;green,2;yellow,1}
+\def\ConnColorB{rgb:red,1;green,2;blue,5}
+\def\ConnColorC{rgb:orange,1;yellow,2;pink,5}
+\def\ConnColorD{rgb:black,1;white,2}
 \newcommand{\midarrow}{\tikz \draw[-Stealth,line width =0.8mm,draw=\edgecolor] (-0.3,0) -- ++(0.3,0);}
-
+\newcommand{\midarrowA}{\tikz \draw[-Stealth,line width =0.8mm,draw=\ConnColorA] (-0.3,0) -- ++(0.3,0);}
+\newcommand{\midarrowB}{\tikz \draw[-Stealth,line width =0.8mm,draw=\ConnColorB] (-0.3,0) -- ++(0.3,0);}
+\newcommand{\midarrowC}{\tikz \draw[-Stealth,line width =0.8mm,draw=\ConnColorC] (-0.3,0) -- ++(0.3,0);}
+\newcommand{\midarrowD}{\tikz \draw[-Stealth,line width =0.8mm,draw=\ConnColorD] (-0.3,0) -- ++(0.3,0);}
 \usepackage{Ball}
 \usepackage{Box}
 \usepackage{RightBandedBox}
